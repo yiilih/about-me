@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rick Lin</title>
+  <meta name="description" content="One-page profile for Rick Lin." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#fbfbf8;
+      --surface:#ffffff;
+      --text:#1f2328;
+      --muted:#5f6b76;
+      --line:#dde2e7;
+      --accent:#1f5f8b;
+      --max:900px;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.68;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+    main{width:min(var(--max), calc(100% - 2rem));margin:0 auto;padding:4.5rem 0 5rem}
+    h1,h2{font-family:'Source Serif 4', Georgia, serif;line-height:1.12;margin:0;color:var(--text);font-weight:600}
+    h1{font-size:clamp(2.5rem, 7vw, 4.6rem);letter-spacing:-0.03em}
+    h2{font-size:1.22rem;margin-bottom:0.9rem}
+    p{margin:0 0 1rem;max-width:70ch}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .intro{padding-bottom:2.5rem;border-bottom:1px solid var(--line)}
+    .eyebrow{font-size:0.78rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--muted);margin-bottom:1rem}
+    .subtitle{font-size:1.06rem;color:var(--muted);margin-top:1rem;max-width:46rem}
+    .meta{display:flex;flex-wrap:wrap;gap:0.75rem 1.5rem;margin-top:1.5rem;font-size:0.95rem;color:var(--muted)}
+    section{padding:2rem 0;border-bottom:1px solid var(--line)}
+    section:last-of-type{border-bottom:none}
+    ul{margin:0;padding-left:1.15rem}
+    li{margin:0 0 0.65rem}
+    .two-col{display:grid;grid-template-columns:190px 1fr;gap:1.5rem;align-items:start}
+    .label{font-size:0.84rem;text-transform:uppercase;letter-spacing:0.12em;color:var(--muted);padding-top:0.2rem}
+    .links{display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.25rem}
+    .links a{display:inline-block;padding:0.7rem 1rem;border:1px solid var(--line);border-radius:999px;color:var(--text);background:var(--surface)}
+    .links a.primary{border-color:var(--accent);background:var(--accent);color:#fff}
+    .item{margin-bottom:1.35rem}
+    .item:last-child{margin-bottom:0}
+    .item-title{font-weight:600}
+    .item-meta{color:var(--muted);font-size:0.95rem;margin-top:0.2rem}
+    footer{margin-top:2.5rem;color:var(--muted);font-size:0.92rem}
+    @media (max-width: 760px){main{padding:3rem 0 4rem}.two-col{grid-template-columns:1fr;gap:0.7rem}.label{padding-top:0}}
+  </style>
+</head>
+<body>
+  <main>
+    <header class="intro">
+      <div class="eyebrow">Scientist · Data and diagnostics</div>
+      <h1>Rick Lin</h1>
+      <p class="subtitle">Scientist and engineer working across data analysis, optics, genomics, and diagnostic assay development, with experience spanning industry R&amp;D, bioengineering, and translational research.</p>
+      <div class="meta">
+        <span>Stockholm, Sweden</span>
+        <span><a href="https://www.linkedin.com/in/yiilih/" target="_blank" rel="noopener noreferrer">Contact via LinkedIn</a></span>
+      </div>
+      <div class="links">
+        <a class="primary" href="https://www.linkedin.com/in/yiilih/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=6eIzrJoAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Google Scholar</a>
+      </div>
+    </header>
+
+    <section class="two-col">
+      <div class="label">Profile</div>
+      <div>
+        <h2>About</h2>
+        <p>I work at the intersection of scientific computing, optics, genomics, and diagnostic product development. My background combines assay development, image processing, automated analysis, and bioengineering methods for real-world biomedical applications.</p>
+      </div>
+    </section>
+
+    <section class="two-col">
+      <div class="label">Experience</div>
+      <div>
+        <h2>Professional experience</h2>
+
+        <div class="item">
+          <div class="item-title">Principal RnD Engineer | Data and Optics</div>
+          <div class="item-meta">Vanadis Diagnostics / PerkinElmer / Revvity · Dec 2019 – Present</div>
+          <ul>
+            <li>Led scientific projects with clear guidance based on theoretical models and technical evaluations.</li>
+            <li>Conducted technical evaluations of genomic and biochemical assays for internal R&amp;D decisions.</li>
+            <li>Developed and maintained automated data processing and reporting pipelines.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="item-title">Postdoc Scientist - Bio and Bioengineering</div>
+          <div class="item-meta">Prof. Fredrik Westerlund's group, Chalmers University of Technology · Aug 2017 – Nov 2019</div>
+          <ul>
+            <li>Developed a computer-vision program to verify images of single DNA molecules.</li>
+            <li>Created an automated assay for optical DNA diagnostics.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div class="item-title">Postdoc Scientist - NanoBio Engineering</div>
+          <div class="item-meta">Academia Sinica, Taiwan · Jul 2016 – Jul 2017</div>
+          <ul>
+            <li>Invented a fast microfluidic device and implemented machine learning to analyze the sizes of chromosomal DNA samples.</li>
+            <li>Designed, manufactured, and optimized a fluidic device to analyze nanoliters of biosamples.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="two-col">
+      <div class="label">Skills</div>
+      <div>
+        <h2>Technical skills</h2>
+        <p><strong>Programming:</strong> R, Tidyverse, Quarto, Python, MATLAB, Git, Linux/Bash, Jira, Bitbucket, GitHub.</p>
+        <p><strong>Life science:</strong> Genetic cloning, cell culture, bioconjugation, chromatography.</p>
+        <p><strong>Optics and microscopy:</strong> Fluorescence, TIRF, super-resolution, adjustment and optimization for optics.</p>
+        <p><strong>Microfluidics:</strong> Clean-room fabrication, photo and soft lithography.</p>
+        <p><strong>Prototyping:</strong> Biodevice prototyping using plastic, adhesives, and glass.</p>
+      </div>
+    </section>
+
+    <section class="two-col">
+      <div class="label">Education</div>
+      <div>
+        <h2>Education</h2>
+        <div class="item">
+          <div class="item-title">PhD, Chemistry at Taiwan University and Physics at Academia Sinica</div>
+          <div class="item-meta">Sep 2007 – Jun 2016</div>
+          <ul>
+            <li>Implemented a fitting algorithm to simulate time-lapsed reactions on microarray.</li>
+            <li>Created a fluorescence-based assay of antibody microarray in nanofluidic devices.</li>
+          </ul>
+        </div>
+        <div class="item">
+          <div class="item-title">MS and BS, Agricultural Chemistry (Industrial Biochemistry)</div>
+          <div class="item-meta">Sep 1997 – Jun 2003</div>
+          <ul>
+            <li>Worked on compound isolation and identification from natural sources for drug discovery.</li>
+            <li>Published two papers and one book chapter.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="two-col">
+      <div class="label">Languages</div>
+      <div>
+        <h2>Languages</h2>
+        <ul>
+          <li>English: Fluent.</li>
+          <li>Mandarin and Taiwanese: Fluent.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="two-col">
+      <div class="label">Scientific publications</div>
+      <div>
+        <h2>Scientific publications</h2>
+        <ul>
+          <li>Sriram KK, Lin YL, Sweunet T, Wrande M, Sandegren L, Giske C, Westerlund F. (2021) <em>A parallelized nanofluidic device for high-throughput optical DNA mapping of bacterial plasmids.</em> Micromachines 12(10):1234.</li>
+          <li>Lin YL, Sewunet T, Sriram KK, Giske C, Westerlund F. (2018) <em>Optical maps of plasmids as a proxy for clonal spread of MDR bacteria: a case study of an outbreak in a rural Ethiopian hospital.</em> Journal of Antimicrobial Chemotherapy 75:2804–2811.</li>
+          <li>Yeh JW, Lin YL, Sriram KK, Chou CF. (2018) <em>Ultrafast size profiling of kilo-base to mega-base paired DNA using opticalfluidic device.</em> microTAS 2018, Taiwan.</li>
+          <li>Lin YL, Huang YJ, Teerapanich P, Leichle T, Chou CF. (2016) <em>Multiplexed immune-sensing and kinetics monitoring in nanofluidic devices with highly enhanced target capture efficiency.</em> Biomicrofluidics 10:034114.</li>
+        </ul>
+        <p>Full publication list on <a href="https://scholar.google.com/citations?user=6eIzrJoAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener noreferrer">Google Scholar</a>.</p>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
